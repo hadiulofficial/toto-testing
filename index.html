@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Testing</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="p-5 col-md-6">
+          <div class="task">
+            <label class="form-label" for="label">Task</label>
+            <input class="form-control" type="text" name="task" id="todo" required />
+          </div>
+          <div class="description">
+            <label for="dec" class="form-label"
+              >Description</label
+            >
+            <textarea
+              class="form-control"
+              id="description"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" id="addTodo" class="btn btn-primary mt-4">Add Todo</button>
+        </div>
+        <!-- todo output -->
+        <div class="p-5 col-md-6">
+            <ul class="todo-lists"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
